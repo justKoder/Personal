@@ -1,0 +1,381 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Library App</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="burger" id="ham">
+                <div class="line" id="l1"></div>
+                <div class="line" id="l2"></div>
+                <div class="line" id="l3"></div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="logo">
+                <a href="#">library</a>
+            </div>
+            <ul class="navItems " id="nav">
+                <li class="item"><a href="#">Books</a></li>
+                <li class="item"><a href="#">Authors</a></li>
+                <li class="item"><a href="#">Blogs</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Category</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- <ul class="userNav">
+                <div class="user">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="num">9+</div>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </ul> -->
+            <ul class="userNav">
+                <button class="btn btn-in">
+                    SignIn
+                </button>
+                <button class="btn btn-up">
+                    SignUp
+                </button>
+            </ul>
+        </div>
+
+    </header>
+    <section class="banner-container">
+        <div class="banner">
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1842&q=80"
+                    alt="">
+            </div>
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1559574945-aa4e651b5b69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1986&q=80"
+                    alt="">
+            </div>
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </div>
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </div>
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </div>
+            <div class="bannerImage">
+                <img src="https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+                    alt="">
+            </div>
+        </div>
+        <div class="left-btn abt" id="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="right-btn abt" id="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+    </section>
+    <main class="mainContainer">
+        <section class="searchSection">
+            <div class="quote">
+                <p>"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a
+                    multitude of counselors."</p>
+
+                <p>- Charles Baudelaire</p>
+            </div>
+            <form class="form">
+                <input type="text">
+                <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="trendingSection">
+                <b>Trending: </b>
+                <p>
+                    <a href="#">coffee,</a>
+                    <a href="#">dark,</a>
+                    <a href="#">winter,</a>
+                    <a href="#">landscape,</a>
+                    <a href="#">technology</a>
+                </p>
+                <!-- <p>coffee, dark, winter, landscape, technology</p> -->
+            </div>
+        </section>
+        <section class="cardContainer">
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1314584/pexels-photo-1314584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/4769488/pexels-photo-4769488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1314584/pexels-photo-1314584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/4769488/pexels-photo-4769488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <div class="coverPage">
+                        <img src="https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="bookInfo">
+                    <div class="name">Harry Potter and the Goblet of fire.</div>
+                    <div class="author">
+                        <a href="#">J.K. Rowaling</a>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            4.5
+                        </div>
+                        <div class="stars">
+
+                        </div>
+                        <div class="number-of-ratings">(13532)</div>
+                    </div>
+                    <div class="price">
+                        <div class="current_price">$1200</div>
+                        <div class="actual_price">$1500</div>
+                        <div class="off_percent">30% Off</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-view">View</button>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

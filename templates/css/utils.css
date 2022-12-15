@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Source+Sans+Pro:wght@200&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ubuntu:wght@500&display=swap');
+
+/* 
+font-family: 'Philosopher', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+:root{
+    --heading-text:'Ubuntu', sans-serif;
+    --content-text:'Nanum Gothic', sans-serif;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+button, input, textarea, select{
+    outline: none;
+    resize: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}

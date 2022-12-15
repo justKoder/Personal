@@ -1,0 +1,211 @@
+.backgroundThumbnail{
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.overContent{
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overContent .title{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--heading-text);
+}
+
+.overContent .subTitle{
+    font-size: 30px;
+}
+
+.overContent .categoryBox{
+    width: fit-content;
+    height: 25px;
+    padding: 2px 10px;
+    font-size: 15px;
+    background-color: yellow;
+    color: #222;
+    border-radius: 3px;
+}
+
+.overContent .author{
+    font-size: 18px;
+    color: grey;
+}
+
+.overContent .reviews{
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.overContent .reviews .reviewers{
+    color: grey;
+}
+ .stars{
+    color: #ffe292;
+}
+
+.overContent .other-info{
+    display: flex;
+    gap: 20px;
+}
+
+.main-content{
+    display: flex;
+    max-width: 1400px;
+    padding: 10px;
+}
+
+.main-content .content-left .book-summary{
+    padding: 10px;
+    border: 1px solid #222;
+}
+.main-content .content-left{
+    max-width: 1000px;
+    width: 100%;
+    height: fit-content;
+    margin: 50px 20px;
+    padding: 10px;
+    
+}
+
+.main-content .content-left .heading{
+    font-size: 40px;
+    color: #222;
+    text-align: left;
+    font-family: var(--heading-text);
+    margin: 20px auto;
+    margin-top: 80px;
+}
+
+/* USER REVIEWS */
+
+.user-reviewCard-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-reviewCard{
+    width: 340px;
+    height: 240px;
+    display: flex;
+    gap: 5px;
+    border-radius:5px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.user-reviewCard .left{
+    width: 100px;
+    height: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    background-color:grey;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+
+.user-reviewCard .text{
+    font-size: 15px;
+}
+
+.user-reviewCard .top{
+    margin: 20px 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 836px) {
+    .user-reviewCard{
+        width: 100%;
+    }
+    .user-reviewCard .text{
+        font-size:18px;
+    }
+}
+
+/* LEFT STICKY BOOK COVER DESIGN */
+
+.bookCover-card{
+    max-width: 300px;
+    min-width: 300px;
+    height: 400px;
+    
+    margin: 30px auto;
+    position: sticky;
+    top: 10px;
+    transition: 0.5s;
+}
+
+.bookCover-card .btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.bookCover-card .btn-container .btn{
+    width: 130px;
+    height: 40px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1286px){
+    .backgroundThumbnail .overContent{
+        /* text-align: center; */
+        margin: 0px auto;
+    }
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    .main-content .content-left{
+        margin: 30px auto;
+        width: 90%;
+        min-width:300px;
+    }
+    .main-content .content-right .bookCover-card{
+        max-width: 600px;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:900px){
+    .backgroundThumbnail .overContent .title{
+        font-size:30px;
+    }
+    .backgroundThumbnail .overContent .subTitle{
+font-size:18px
+    }
+    .backgroundThumbnail .overContent .other-info{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .backgroundThumbnail .overContent .title{
+        font-size:23px;
+    }
+}
